@@ -1,3 +1,62 @@
+
 #old {
+  display: none;
+}
+
+body {
+  background-color: #740001;
+}
+
+#return-to-original {
   display: inline-block;
+  position: absolute;
+  margin-top: 55%;
+}
+
+#new{
+  right: 0;
+}
+
+#snitch{
+  position: absolute;
+  height: 5%;
+  width: 5%;
+}
+
+.bludger {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+}
+
+/* #balls{
+  display: none;
+} */
+
+#win-message{
+  display: none;
+  position: relative;
+  background-color: #d3a625;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 35%;
+  height: 10%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+#lose-message {
+  display: none;
+  position: relative;
+  background-color: #d3a625;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 35%;
+  height: 10%;
+  padding-top: 2%;
+  text-align: center;
 }
