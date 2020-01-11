@@ -78,8 +78,7 @@ function moveB(ball){
 
 function moveS(ball){
 
-  var x = Math.floor((Math.random() * 25) + 20);
-  setInterval(function(){moveSLeft(ball)}, x);
+  setInterval(function(){moveSLeft(ball)}, 30);
 
 }
 
@@ -96,7 +95,6 @@ function moveBLeft(ball){
   if(parseInt(ball.style.right) > 1500){
     ball.style.right = -100;
     ball.style.top = x;
-    console.log("MOVE to top = " + ball.style.top);
   }
 
 }
@@ -104,28 +102,46 @@ function moveBLeft(ball){
 function moveSLeft(ball){
 
   var y = Math.floor((Math.random() * 15) + 5);
+  var z = Math.floor((Math.random() * 2));
+  var up = Math.floor((Math.random() * 50) + 1);
 
   ball.style.right =
     parseInt(ball.style.right) + y + 'px';
+  if(up == 20){
+    ball.style.top =
+      parseInt(ball.style.right) + z + 'px';
+    console.log("UP YA GO");
+  }
+  else if(up == 30){
+    ball.style.top =
+      parseInt(ball.style.right) - z + 'px';
+    console.log("DOWN YA GO");
+  }
+
+  if(parseInt(ball.style.top) > 600){
+    ball.style.top = 500;
+  }
+  else if(parseInt(ball.style.top) < 50){
+    ball.style.top = 60;
+  }
 
   var x = Math.floor((Math.random() * 600) + 50);
   if(parseInt(ball.style.right) > 1500){
     ball.style.right = -500;
     ball.style.top = x;
-    console.log("MOVE to top = " + ball.style.top);
   }
 }
 
 function win(){
   document.getElementById("balls").style.display = "none";
-  document.getElementById("win-message").style.display = "inline-block";
+  document.getElementById("win-message").style.display = "block";
   document.getElementById("win-message").style.margin.right = "auto";
   document.getElementById("win-message").style.margin.left = "auto";
 }
 
 function lose(){
   document.getElementById("balls").style.display = "none";
-  document.getElementById("lose-message").style.display = "inline-block";
+  document.getElementById("lose-message").style.display = "block";
   document.getElementById("win-message").style.margin.right = "auto";
   document.getElementById("win-message").style.margin.left = "auto";
 }
