@@ -103,7 +103,7 @@ function moveSLeft(ball){
 
   var y = Math.floor((Math.random() * 15) + 5);
   var z = Math.floor((Math.random() * 2));
-  var up = Math.floor((Math.random() * 50) + 1);
+  var up = Math.floor((Math.random() * 30) + 1);
 
   ball.style.right =
     parseInt(ball.style.right) + y + 'px';
