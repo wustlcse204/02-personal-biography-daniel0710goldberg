@@ -36,28 +36,34 @@ body {
 
 #win-message{
   display: none;
-  position: relative;
+  position: absolute;
   background-color: #d3a625;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 35%;
-  height: 10%;
-  padding-top: 2%;
+  color: #ae0001;
+  font-size: 22px;
+  margin-left: 27.5%;
+  margin-top: 15%;
+  width: 45%;
+  height: 30%;
+  padding-top: 7.5%;
+  padding-bottom: 2.5%;
   text-align: center;
+}
+
+#clue{
+  font-size: 80px;
 }
 
 #lose-message {
   display: none;
   position: relative;
   background-color: #d3a625;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 35%;
-  height: 10%;
-  padding-top: 1%;
+  color: #ae0001;
+  font-size: 22px;
+  font-size: 22px;
+  margin-left: 27.5%;
+  margin-top: 15%;
+  width: 45%;
+  height: 30%;
+  padding-top: 10%;
   text-align: center;
 }
